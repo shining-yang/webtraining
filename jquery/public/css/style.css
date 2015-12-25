@@ -1,3 +1,11 @@
+body {
+    width: 600px;
+    margin: 10px auto;
+    background-color: beige;
+    padding: 0 20px 20px 20px;
+    boder: 5px solid black;
+}
+
 p {
     background: #eae;
     font-weight: bold;
