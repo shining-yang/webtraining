@@ -31,9 +31,13 @@ function sendStaticFile(res, filepath) {
 }
 
 var server = http.createServer(function(req, res) {
-  var filepath = './public/index.html';
-  if (req.url !== '/') {
-    filepath = path.join('./public', req.url);
+  var filepath;
+  if (req.url === '/' || req.url === '/index.html') {
+    filepath = 'public/index.html';
+  } else if (path.extname(req.url) === '.html') {
+    filepath = path.join('public', 'html', req.url);
+  } else {
+    filepath = path.join('public', req.url);
   }
 
   sendStaticFile(res, filepath);
