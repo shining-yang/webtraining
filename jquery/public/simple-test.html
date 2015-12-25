@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Sample Page</title>
+    <style>
+        p {
+            background: #eae;
+            font-weight: bold;
+        }
+    </style>
+    <script src='https://code.jquery.com/jquery-1.10.2.js'></script>
+</head>
+
+<body>
+<button>Click me</button>
+<p>Some text</p>
+<div>
+    <p>
+        What a weather!
+    </p>
+</div>
+<div>
+    <ul>
+        <li id='list1'>Friday</li>
+        <li id='list2'>Saturday</li>
+    </ul>
+</div>
+<script>
+    $('button').click(function (event) {
+        $('#list1').hide(500);
+    });
+</script>
+</body>
+
+</html>
