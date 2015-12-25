@@ -1,0 +1,8 @@
+{
+  "name": "jQuery-practice",
+  "description": "A sample web project using jQuery.",
+  "version": "0.0.1",
+  "dependencies": {
+    "mime": "~1.2.7"
+  }
+}

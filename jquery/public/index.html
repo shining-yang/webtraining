@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a.sample {
+            font-weight: bold
+        }
+    </style>
+</head>
+<body>
+    <a href="http://jquery.com">jQuery</a>
+    <script src='js/jquery-1.11.3.js'></script>
+    <script>
+        $(document).ready(function() {
+            $('a').click(function (event) {
+                event.preventDefault();
+                $('a').addClass('sample');
+            });
+        });
+    </script>
+</body>
+</html>
